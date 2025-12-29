@@ -9,42 +9,89 @@
 <body>
 
 <header>
-  <img 
+  <img
     src="https://static.wixstatic.com/media/038e55_c6d16adb65444190a5e0e3730adc1a2d~mv2.png"
     alt="Bang Burgers Logo"
     class="logo"
   >
 
-<nav>
-  <a href="./index.html">Home</a>
-  <a href="./menu.html" class="active">Menu</a>
-  <a href="./contact.html">Contact</a>
-</nav>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html" class="active">Menu</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
 </header>
 
-<section class="menu">
+<section class="menu-page">
 
+  <!-- ORDER BUTTON -->
+  <div class="order-cta">
+    <a
+      href="https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=10c188ad-161e-4ac4-9e87-97cc7f6bf30b"
+      target="_blank"
+      class="order-btn"
+    >
+      ORDER NOW
+    </a>
+    <p class="order-note">Online ordering powered by Foodbooking</p>
+  </div>
+
+  <!-- CLASSIC BURGERS -->
   <h2>CLASSIC BURGERS</h2>
-  <div class="item"><span>The All-American</span><span>£8.25</span></div>
-  <div class="item"><span>The Icon</span><span>£9.25</span></div>
-  <div class="item"><span>Halloumi Burger</span><span>£9.25</span></div>
-  <div class="item"><span>Bacon Cheeseburger</span><span>£10.25</span></div>
 
+  <div class="menu-card">
+    <div class="menu-item"><span>The All-American</span><span>£8.25</span></div>
+    <p>House burger sauce, pickles, double beef patty, American cheese, grilled onions</p>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-item"><span>The Icon</span><span>£9.25</span></div>
+    <p>House burger sauce, pickles, lettuce, double beef patty, cheddar, grilled onions</p>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-item"><span>Halloumi Burger</span><span>£9.25</span></div>
+    <p>Sweet chilli sauce, lettuce, tomato, fried halloumi</p>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-item"><span>Bacon Cheeseburger</span><span>£10.25</span></div>
+    <p>House burger sauce, lettuce, double beef patty, cheddar, crispy bacon</p>
+  </div>
+
+  <!-- SPECIALITY BURGERS -->
   <h2>SPECIALITY BURGERS</h2>
-  <div class="item"><span>Brie & Bacon</span><span>£12.15</span></div>
-  <div class="item"><span>The El Matador</span><span>£12.15</span></div>
-  <div class="item"><span>The Firestarter</span><span>£10.25</span></div>
 
+  <div class="menu-card">
+    <div class="menu-item"><span>Brie & Bacon</span><span>£12.15</span></div>
+    <p>Cranberry sauce, lettuce, double beef patty, brie, bacon, crispy onions</p>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-item"><span>The El Matador</span><span>£12.15</span></div>
+    <p>Smoky paprika mayo, rocket, double beef patty, cheddar, chorizo, grilled onions</p>
+  </div>
+
+  <div class="menu-card">
+    <div class="menu-item"><span>The Firestarter</span><span>£10.25</span></div>
+    <p>Chilli sauce, jalapeños, double smashed beef patty, American cheese, crispy onions</p>
+  </div>
+
+  <!-- SIDES -->
   <h2>SIDES</h2>
-  <div class="item"><span>Regular Fries</span><span>£3.25</span></div>
-  <div class="item"><span>Large Fries</span><span>£4.25</span></div>
-  <div class="item"><span>Regular Bomb Fries</span><span>£3.75</span></div>
-  <div class="item"><span>Large Bomb Fries</span><span>£4.75</span></div>
-  <div class="item sold"><span>Mozzarella Sticks (5pcs)</span><span>SOLD OUT</span></div>
-  <div class="item"><span>Halloumi Fries (6pcs)</span><span>£6.25</span></div>
-  <div class="item"><span>Onion Rings (6pcs)</span><span>£4.25</span></div>
-  <div class="item"><span>Sauce Pots</span><span>£0.50</span></div>
 
+  <div class="menu-card">
+    <div class="menu-item"><span>Regular Fries</span><span>£3.25</span></div>
+    <div class="menu-item"><span>Large Fries</span><span>£4.25</span></div>
+    <div class="menu-item"><span>Regular Bomb Fries</span><span>£3.75</span></div>
+    <div class="menu-item"><span>Large Bomb Fries</span><span>£4.75</span></div>
+    <div class="menu-item sold"><span>Mozzarella Sticks (5pcs)</span><span>Sold Out</span></div>
+    <div class="menu-item"><span>Halloumi Fries (6pcs)</span><span>£6.25</span></div>
+    <div class="menu-item"><span>Onion Rings (6pcs)</span><span>£4.25</span></div>
+    <div class="menu-item"><span>Sauce Pots</span><span>£0.50</span></div>
+  </div>
+
+  <!-- DRINKS -->
   <h2>DRINKS (£1.70)</h2>
   <p class="drinks">
     Coca-Cola • Diet Coke • Rio Tropical • Apple Tango • Orange Tango •
