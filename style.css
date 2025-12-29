@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +6,29 @@
   font-family: Arial, sans-serif;
 }
 
+/* GLOBAL */
 body {
   background: #0b0b0b;
   color: white;
 }
 
+a {
+  color: inherit;
+}
+
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 16px 30px;
 }
 
 .logo {
   width: 70px;
 }
 
-/* NAV UNDERLINE (ACTIVE PAGE) */
+/* NAVIGATION */
 nav a {
   color: white;
   text-decoration: none;
@@ -31,6 +38,7 @@ nav a {
   position: relative;
 }
 
+/* Active page underline */
 nav a.active::after {
   content: "";
   position: absolute;
@@ -41,6 +49,7 @@ nav a.active::after {
   background: white;
 }
 
+/* Hover underline */
 nav a:hover::after {
   content: "";
   position: absolute;
@@ -51,7 +60,134 @@ nav a:hover::after {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* HERO (HOME PAGE) */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 30px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.hero-img {
+  width: 360px;
+}
+
+/* BUTTONS */
+.btn,
+.order-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 36px;
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover,
+.order-btn:hover {
+  background: #ff4d5a;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #777;
+  margin-top: 60px;
+}
+
+/* ========================= */
+/* MENU PAGE */
+/* ========================= */
+
+.menu-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 25px;
+}
+
+/* Order CTA */
+.order-cta {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.order-note {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Section titles */
+.menu-page h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  border-bottom: 2px solid #222;
+  padding-bottom: 6px;
+}
+
+/* Menu cards */
+.menu-card {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+/* Menu items */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.menu-item span:last-child {
+  font-weight: bold;
+}
+
+.menu-card p {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sold {
+  opacity: 0.4;
+}
+
+/* Drinks */
+.drinks {
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* ========================= */
 /* CONTACT PAGE */
+/* ========================= */
 
 .contact-page {
   padding: 60px 30px;
@@ -70,6 +206,7 @@ nav a:hover::after {
   margin-bottom: 45px;
 }
 
+/* Contact cards */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -91,128 +228,38 @@ nav a:hover::after {
   color: #ccc;
   line-height: 1.6;
 }
-/* White underline for active page */
-nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: white;
-}
 
-/* Optional hover underline */
-nav a:hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 30px;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  max-width: 500px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero p {
-  margin-top: 10px;
-  color: #ccc;
-}
-
-.hero-img {
-  width: 350px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #e63946;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-}
-
-.menu, .contact {
-  padding: 40px 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.menu h2 {
-  margin-top: 40px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 0;
-}
-
-.item span:last-child {
-  font-weight: bold;
-}
-
-.sold {
-  opacity: 0.5;
-}
-
-.drinks {
-  margin-top: 10px;
-  color: #ccc;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #777;
-  margin-top: 40px;
-}
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
 
 @media (max-width: 768px) {
+
+  header {
+    padding: 14px 20px;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
+
+  /* Hero mobile */
   .hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .hero-text {
-    width: 100%;
+    padding: 60px 20px;
   }
 
   .hero-img {
-    display: block;
-    margin: 30px auto 0 auto; /* 👈 centers the burger */
+    margin: 30px auto 0 auto;
     width: 280px;
   }
 
-  nav a {
-    margin-left: 10px;
+  /* Buttons */
+  .btn,
+  .order-btn {
+    width: 100%;
+    max-width: 320px;
   }
 }
-
-  .hero-img {
-    margin-top: 30px;
-    width: 280px;
-  }
-
-  nav a {
-    margin-left: 10px;
-  }
