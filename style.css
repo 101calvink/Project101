@@ -310,9 +310,13 @@ footer {
     max-width: 320px;
   }
 }
+/* ========================= */
+/* ABOUT TOGGLE – FIX */
+/* ========================= */
+
 .about-toggle {
   max-width: 900px;
-  margin: 40px auto 0;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
@@ -327,10 +331,17 @@ footer {
   cursor: pointer;
 }
 
-.about-hint {
-  color: #aaa;
-  font-size: 0.9rem;
+.about-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.about-arrow {
+  transition: transform 0.3s ease;
+}
+
+/* CLOSED STATE */
 .about-panel {
   max-height: 0;
   overflow: hidden;
@@ -342,27 +353,19 @@ footer {
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
+/* OPEN STATE */
+.about-toggle.open .about-panel {
+  max-height: 600px;
+  padding-top: 20px;
+}
+
 .about-panel p {
   color: #ccc;
   line-height: 1.7;
   padding-bottom: 26px;
 }
 
-.about-toggle.open .about-panel {
-  max-height: 500px;
-  padding-top: 20px;
-}
-.about-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.about-arrow {
-  font-size: 0.9rem;
-  transition: transform 0.3s ease;
-}
-
+/* ROTATE ARROW WHEN OPEN */
 .about-toggle.open .about-arrow {
   transform: rotate(180deg);
 }
