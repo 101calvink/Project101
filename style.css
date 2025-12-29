@@ -23,7 +23,7 @@ a {
 /* ========================= */
 
 header {
-  display: sticky;
+  display: flexy;
   justify-content: space-between;
   align-items: center;
   padding: 16px 30px;
