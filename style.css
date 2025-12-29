@@ -250,6 +250,15 @@ nav a:hover::after {
   color: #ccc;
   line-height: 1.6;
 }
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:hover {
+  border-color: #444;
+  transform: translateY(-2px);
+}
 
 /* ========================= */
 /* FOOTER */
