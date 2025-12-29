@@ -310,3 +310,59 @@ footer {
     max-width: 320px;
   }
 }
+.about-toggle {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.about-card {
+  width: 100%;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 18px;
+  padding: 26px;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.about-hint {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.about-panel {
+  max-height: 0;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 0 0 18px 18px;
+  margin-top: -10px;
+  padding: 0 26px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.about-panel p {
+  color: #ccc;
+  line-height: 1.7;
+  padding-bottom: 26px;
+}
+
+.about-toggle.open .about-panel {
+  max-height: 500px;
+  padding-top: 20px;
+}
+.about-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-arrow {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.about-toggle.open .about-arrow {
+  transform: rotate(180deg);
+}
